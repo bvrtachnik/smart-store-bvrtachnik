@@ -1,0 +1,147 @@
+2025-03-27 10:21:58.785 | INFO     | utils.logger:<module>:39 - Logging to file: logs\project_log.log
+2025-03-27 10:21:58.786 | INFO     | __main__:main:165 - ==================================
+2025-03-27 10:21:58.787 | INFO     | __main__:main:166 - STARTING prepare_customers_data.py
+2025-03-27 10:21:58.787 | INFO     | __main__:main:167 - ==================================
+2025-03-27 10:21:58.787 | INFO     | __main__:main:169 - Root project folder: C:\Projects\smart-store-bvrtachnik
+2025-03-27 10:21:58.787 | INFO     | __main__:main:170 - data / raw folder: C:\Projects\smart-store-bvrtachnik\data\raw
+2025-03-27 10:21:58.788 | INFO     | __main__:main:171 - data / prepared folder: C:\Projects\smart-store-bvrtachnik\data\prepared
+2025-03-27 10:21:58.788 | INFO     | __main__:main:172 - scripts folder: C:\Projects\smart-store-bvrtachnik\scripts
+2025-03-27 10:21:58.789 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-27 10:21:58.789 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-bvrtachnik\data\raw\customers_data.csv
+2025-03-27 10:21:58.799 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-27 10:21:58.799 | INFO     | __main__:main:181 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LastActiveYear, PreferredContactMethod
+2025-03-27 10:21:58.800 | INFO     | __main__:main:182 - Initial dataframe shape: (11, 6)
+2025-03-27 10:21:58.801 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-27 10:21:58.813 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-27 10:21:58.814 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-27 10:21:58.814 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-27 10:21:58.815 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 3
+2025-03-27 10:21:58.818 | INFO     | __main__:handle_missing_values:133 - Total missing values after handling: 0
+2025-03-27 10:21:58.819 | INFO     | __main__:handle_missing_values:134 - 11 records remaining after handling missing values.
+2025-03-27 10:21:58.819 | INFO     | __main__:remove_outliers:148 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-27 10:21:58.819 | INFO     | __main__:remove_outliers:156 - Removed 0 outlier rows
+2025-03-27 10:21:58.820 | INFO     | __main__:remove_outliers:157 - 11 records remaining after removing outliers.
+2025-03-27 10:21:58.820 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-27 10:45:19.442 | INFO     | utils.logger:<module>:39 - Logging to file: logs\project_log.log
+2025-03-27 10:45:19.442 | INFO     | __main__:main:165 - ==================================
+2025-03-27 10:45:19.442 | INFO     | __main__:main:166 - STARTING prepare_customers_data.py
+2025-03-27 10:45:19.443 | INFO     | __main__:main:167 - ==================================
+2025-03-27 10:45:19.443 | INFO     | __main__:main:169 - Root project folder: C:\Projects\smart-store-bvrtachnik
+2025-03-27 10:45:19.443 | INFO     | __main__:main:170 - data / raw folder: C:\Projects\smart-store-bvrtachnik\data\raw
+2025-03-27 10:45:19.443 | INFO     | __main__:main:171 - data / prepared folder: C:\Projects\smart-store-bvrtachnik\data\prepared
+2025-03-27 10:45:19.444 | INFO     | __main__:main:172 - scripts folder: C:\Projects\smart-store-bvrtachnik\scripts
+2025-03-27 10:45:19.444 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-27 10:45:19.445 | INFO     | __main__:read_raw_data:68 - Reading data from C:\Projects\smart-store-bvrtachnik\data\raw\customers_data.csv
+2025-03-27 10:45:19.456 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-27 10:45:19.456 | INFO     | __main__:main:181 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LastActiveYear, PreferredContactMethod
+2025-03-27 10:45:19.456 | INFO     | __main__:main:182 - Initial dataframe shape: (11, 6)
+2025-03-27 10:45:19.458 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-27 10:45:19.468 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-27 10:45:19.469 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-27 10:45:19.469 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-27 10:45:19.470 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 3
+2025-03-27 10:45:19.472 | INFO     | __main__:handle_missing_values:133 - Total missing values after handling: 0
+2025-03-27 10:45:19.473 | INFO     | __main__:handle_missing_values:134 - 11 records remaining after handling missing values.
+2025-03-27 10:45:19.473 | INFO     | __main__:remove_outliers:148 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-27 10:45:19.473 | INFO     | __main__:remove_outliers:156 - Removed 0 outlier rows
+2025-03-27 10:45:19.473 | INFO     | __main__:remove_outliers:157 - 11 records remaining after removing outliers.
+2025-03-27 10:45:19.474 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-27 10:45:19.477 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-bvrtachnik\data\prepared\customers_data_prepared.csv
+2025-03-27 10:45:19.478 | INFO     | __main__:main:205 - ==================================
+2025-03-27 10:45:19.479 | INFO     | __main__:main:206 - FINISHED prepare_customers_data.py
+2025-03-27 10:45:19.479 | INFO     | __main__:main:207 - ==================================
+2025-03-27 11:39:51.388 | INFO     | utils.logger:<module>:39 - Logging to file: logs\project_log.log
+2025-03-27 11:39:51.389 | INFO     | __main__:main:218 - ==================================
+2025-03-27 11:39:51.390 | INFO     | __main__:main:219 - STARTING prepare_products_data.py
+2025-03-27 11:39:51.390 | INFO     | __main__:main:220 - ==================================
+2025-03-27 11:39:51.390 | INFO     | __main__:main:222 - Root project folder: C:\Projects\smart-store-bvrtachnik
+2025-03-27 11:39:51.391 | INFO     | __main__:main:223 - data / raw folder: C:\Projects\smart-store-bvrtachnik\data\raw
+2025-03-27 11:39:51.391 | INFO     | __main__:main:224 - data / prepared folder: C:\Projects\smart-store-bvrtachnik\data\prepared
+2025-03-27 11:39:51.391 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-03-27 11:39:51.392 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-bvrtachnik\data\raw\products_data.csv
+2025-03-27 11:39:51.397 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 8 rows and 6 columns
+2025-03-27 11:39:51.397 | INFO     | __main__:main:233 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, CurrentDiscountPercent, Subcategory
+2025-03-27 11:39:51.398 | INFO     | __main__:main:234 - Initial dataframe shape: (8, 6)
+2025-03-27 11:39:51.399 | INFO     | __main__:remove_duplicates:96 - FUNCTION START: remove_duplicates with dataframe shape=(8, 6)
+2025-03-27 11:39:51.402 | INFO     | __main__:remove_duplicates:106 - Removed 0 duplicate rows
+2025-03-27 11:39:51.402 | INFO     | __main__:remove_duplicates:107 - 8 records remaining after removing duplicates.
+2025-03-27 11:39:51.403 | INFO     | __main__:handle_missing_values:121 - FUNCTION START: handle_missing_values with dataframe shape=(8, 6)
+2025-03-27 11:39:51.406 | INFO     | __main__:handle_missing_values:126 - Missing values by column before handling:
+ProductID                 0
+ProductName               0
+Category                  0
+UnitPrice                 0
+CurrentDiscountPercent    0
+Subcategory               1
+dtype: int64
+2025-03-27 11:39:51.409 | INFO     | __main__:handle_missing_values:140 - Missing values by column after handling:
+ProductID                 0
+ProductName               0
+Category                  0
+UnitPrice                 0
+CurrentDiscountPercent    0
+Subcategory               0
+dtype: int64
+2025-03-27 11:39:51.409 | INFO     | __main__:handle_missing_values:141 - 8 records remaining after handling missing values.
+2025-03-27 11:39:51.410 | INFO     | __main__:standardize_formats:179 - FUNCTION START: standardize_formats with dataframe shape=(8, 6)
+2025-03-27 11:39:51.410 | INFO     | __main__:standardize_formats:189 - Completed standardizing formats
+2025-03-27 11:39:51.410 | INFO     | __main__:remove_outliers:149 - FUNCTION START: remove_outliers with dataframe shape=(8, 6)
+2025-03-27 11:39:51.419 | INFO     | __main__:remove_outliers:161 - Replacing 1 Clothing discount outliers with median: 0.2
+2025-03-27 11:39:51.421 | INFO     | __main__:remove_outliers:166 - 8 records remaining after correcting outliers.
+2025-03-27 11:39:51.421 | INFO     | __main__:validate_data:202 - FUNCTION START: validate_data with dataframe shape=(8, 6)
+2025-03-27 11:39:51.421 | INFO     | __main__:validate_data:211 - Data validation complete
+2025-03-27 11:39:51.422 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=products_data_prepared.csv, dataframe shape=(8, 6)
+2025-03-27 11:39:51.425 | INFO     | __main__:save_prepared_data:84 - Data saved to C:\Projects\smart-store-bvrtachnik\data\prepared\products_data_prepared.csv
+2025-03-27 11:39:51.426 | INFO     | __main__:main:255 - ==================================
+2025-03-27 11:39:51.426 | INFO     | __main__:main:256 - FINISHED prepare_products_data.py
+2025-03-27 11:39:51.426 | INFO     | __main__:main:257 - ==================================
+2025-03-27 17:43:55.252 | INFO     | utils.logger:<module>:39 - Logging to file: logs\project_log.log
+2025-03-27 17:43:55.253 | INFO     | __main__:main:182 - ==================================
+2025-03-27 17:43:55.254 | INFO     | __main__:main:183 - STARTING prepare_sales_data.py
+2025-03-27 17:43:55.254 | INFO     | __main__:main:184 - ==================================
+2025-03-27 17:43:55.255 | INFO     | __main__:main:186 - Root project folder: C:\Projects\smart-store-bvrtachnik
+2025-03-27 17:43:55.256 | INFO     | __main__:main:187 - data / raw folder: C:\Projects\smart-store-bvrtachnik\data\raw
+2025-03-27 17:43:55.257 | INFO     | __main__:main:188 - data / prepared folder: C:\Projects\smart-store-bvrtachnik\data\prepared
+2025-03-27 17:43:55.258 | INFO     | __main__:read_raw_data:59 - FUNCTION START: read_raw_data with file_name=sales_data.csv
+2025-03-27 17:43:55.259 | INFO     | __main__:read_raw_data:61 - Reading data from C:\Projects\smart-store-bvrtachnik\data\raw\sales_data.csv
+2025-03-27 17:43:55.275 | INFO     | __main__:read_raw_data:63 - Loaded dataframe with 94 rows and 9 columns
+2025-03-27 17:43:55.276 | INFO     | __main__:main:195 - Initial dataframe columns: TransactionID, SaleDate, CustomerID, ProductID, StoreID, CampaignID, SaleAmount, BonusPoints, PaymentType
+2025-03-27 17:43:55.277 | INFO     | __main__:main:196 - Initial dataframe shape: (94, 9)
+2025-03-27 17:43:55.279 | INFO     | __main__:remove_duplicates:89 - FUNCTION START: remove_duplicates with dataframe shape=(94, 9)
+2025-03-27 17:43:55.282 | INFO     | __main__:remove_duplicates:93 - Removed 0 duplicate rows
+2025-03-27 17:43:55.283 | INFO     | __main__:handle_missing_values:107 - FUNCTION START: handle_missing_values with dataframe shape=(94, 9)
+2025-03-27 17:43:55.286 | INFO     | __main__:handle_missing_values:110 - Missing values by column before handling:
+TransactionID    0
+SaleDate         0
+CustomerID       0
+ProductID        0
+StoreID          0
+CampaignID       0
+SaleAmount       0
+BonusPoints      2
+PaymentType      5
+dtype: int64
+2025-03-27 17:43:55.295 | INFO     | __main__:handle_missing_values:128 - Filled 2 missing BonusPoints using SaleAmount.
+2025-03-27 17:43:55.295 | INFO     | __main__:handle_missing_values:129 - Adjusted 1 outlier BonusPoints to match SaleAmount.
+2025-03-27 17:43:55.298 | INFO     | __main__:handle_missing_values:132 - Missing values by column after handling:
+TransactionID    0
+SaleDate         0
+CustomerID       0
+ProductID        0
+StoreID          0
+CampaignID       0
+SaleAmount       0
+BonusPoints      0
+PaymentType      0
+dtype: int64
+2025-03-27 17:43:55.299 | INFO     | __main__:standardize_formats:160 - FUNCTION START: standardize_formats with dataframe shape=(94, 9)
+2025-03-27 17:43:55.300 | INFO     | __main__:standardize_formats:161 - Completed standardizing formats
+2025-03-27 17:43:55.301 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(94, 9)
+2025-03-27 17:43:55.301 | INFO     | __main__:remove_outliers:147 - No additional outlier removal implemented at this time.
+2025-03-27 17:43:55.302 | INFO     | __main__:validate_data:174 - FUNCTION START: validate_data with dataframe shape=(94, 9)
+2025-03-27 17:43:55.303 | INFO     | __main__:validate_data:175 - Data validation complete
+2025-03-27 17:43:55.303 | INFO     | __main__:save_prepared_data:74 - FUNCTION START: save_prepared_data with file_name=sales_data_prepared.csv, dataframe shape=(94, 9)
+2025-03-27 17:43:55.311 | INFO     | __main__:save_prepared_data:77 - Data saved to C:\Projects\smart-store-bvrtachnik\data\prepared\sales_data_prepared.csv
+2025-03-27 17:43:55.311 | INFO     | __main__:main:212 - ==================================
+2025-03-27 17:43:55.312 | INFO     | __main__:main:213 - FINISHED prepare_sales_data.py
+2025-03-27 17:43:55.312 | INFO     | __main__:main:214 - ==================================
