@@ -32,9 +32,28 @@ def read_raw_data(file_name: str) -> pd.DataFrame:
         logger.error(f"Error reading {file_path}: {e}")
         return pd.DataFrame()  # Return an empty DataFrame if any other error occurs
 
+from scripts.data_scrubber import DataScrubber  # You wrote this!
+
 def process_data(file_name: str) -> None:
-    """Process raw data by reading it into a pandas DataFrame object."""
     df = read_raw_data(file_name)
+    if df.empty:
+        return
+
+    scrubber = DataScrubber = DataScrubber(df)
+    scrubber.handle_missing_data(fill_value=0)
+    scrubber.remove_duplicate_records()
+
+    # Optional dataset-specific cleaning logic here:
+    if "customers" in file_name:
+        scrubber.format_column_strings_to_lower_and_trim("Name")
+    elif "sales" in file_name:
+        scrubber.parse_dates_to_add_standard_datetime("Date")
+
+    # Save cleaned data
+    cleaned_path = DATA_DIR.joinpath("clean", file_name.replace(".csv", "_clean.csv"))
+    cleaned_path.parent.mkdir(parents=True, exist_ok=True)
+    scrubber.df.to_csv(cleaned_path, index=False)
+
 
 def main() -> None:
     """Main function for processing customer, product, and sales data."""
