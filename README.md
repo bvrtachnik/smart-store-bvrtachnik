@@ -119,13 +119,13 @@ py scripts\etl_to_dw.py
 ## Table Previews
 
 ### Customer Table
-![Customer Table](../customer_table_screenshot.png)
+![Customer Table](customer_table_screenshot.png)
 
 ### Product Table
-![Product Table](../product_table_screenshot.png)
+![Product Table](product_table_screenshot.png)
 
 ### Sale Table
-![Sale Table](../sale_table_screenshot.png)
+![Sale Table](sale_table_screenshot.png)
 
 ## Notes
 
