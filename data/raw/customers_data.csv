@@ -1,4 +1,4 @@
-CustomerID,Name,Region,JoinDate,LastActiveYear,PreferredContactMethod
+customer_id,name,region,join_date,last_active_year,preferred_contact_method
 1001,William White,East,11/11/2021,2022,Email
 1002,Wylie Coyote,East,2/14/2023,2023,Phone
 1003,Dan Brown,West,10/19/2023,2023,

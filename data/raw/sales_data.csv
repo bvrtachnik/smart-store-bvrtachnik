@@ -1,4 +1,4 @@
-TransactionID,SaleDate,CustomerID,ProductID,StoreID,CampaignID,SaleAmount,BonusPoints,PaymentType
+sale_id,sale_date,customer_id,product_id,store_id,campaign_id,sale_amount,bonus_points,payment_type
 550,1/6/2024,1008,102,404,0,39.1,39,Credit
 551,1/6/2024,1009,105,403,0,19.78,19,Cash
 552,1/16/2024,1004,107,404,0,335.1,335,Cash

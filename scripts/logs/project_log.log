@@ -1,0 +1,12 @@
+2025-04-03 12:50:43.811 | INFO     | utils.logger:<module>:39 - Logging to file: logs\project_log.log
+2025-04-03 12:50:43.813 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-03 12:50:43.815 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-03 12:50:43.815 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-04-03 13:03:22.102 | INFO     | utils.logger:<module>:39 - Logging to file: logs\project_log.log
+2025-04-03 13:03:22.102 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-03 13:03:22.103 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-03 13:03:22.104 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-04-03 13:06:06.194 | INFO     | utils.logger:<module>:39 - Logging to file: logs\project_log.log
+2025-04-03 13:06:06.195 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-03 13:06:06.196 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-03 13:06:06.196 | INFO     | __main__:main:45 - Data warehouse creation complete.
