@@ -132,3 +132,33 @@ py scripts\etl_to_dw.py
 - This project uses `pandas` for data manipulation and `sqlite3` for database interactions.
 - The ETL process is repeatable and can be run multiple times without manual cleanup.
 - The resulting SQLite database can be queried directly or connected to BI tools for further analysis.
+
+
+## Reporting and Analysis (Power BI)
+
+- Connected `smart_sales.db` to Power BI using ODBC (`SmartSalesDSN`) and loaded the `customer`, `product`, and `sale` tables  
+- Opened Power Query Editor and wrote a SQL query to calculate total spent by each customer:  
+  ```sql
+  SELECT c.name, SUM(s.sale_amount) AS total_spent
+  FROM sale s
+  JOIN customer c ON s.customer_id = c.customer_id
+  GROUP BY c.name
+  ORDER BY total_spent DESC;
+  ```
+
+- Created a query named `top_customers` based on the result and used it in visuals  
+- Added calculated columns to extract `Year`, `Quarter`, and `Month Name` from `sale_date`  
+- Used slicers for filtering by `Month Name`, `Quarter`, `Year`, and `category`  
+- Created a matrix visual to explore unit prices by product `category` and `subcategory`  
+- Designed a bar chart to show top customers by `sale_amount`  
+- Built a bar chart for total `sale_amount` by `Month Name`  
+- Ensured all visuals were interactive and filtered by slicer selections  
+
+### Power BI Model View
+![Power BI Model View Screenshot](power_bi_model_view_screenshot.png)
+
+### Query Results
+![Query Results](query_results_screenshot.png)
+
+### Final Dashboard
+![Final Dashboard](final_dashboard_screenshot.png)
