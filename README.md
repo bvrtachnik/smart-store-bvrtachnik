@@ -1,3 +1,14 @@
+# Smart Store Project - Exploring Business Intelligence and Insights
+### Author: Brett
+
+## Table of Contents
+- [Project Initialization](#project-initialization)
+- [Data Cleaning Process](#data-cleaning-process)
+- [Data Warehouse Creation](#data-warehouse-creation)
+- [Database Schema](#database-schema)
+- [Power BI Reporting and Analysis](#reporting-and-analysis-power-bi)
+- [OLAP Project: Smart Sales Analysis](#olap-project-smart-sales-analysis)
+
 # Project Setup
 
 ## Project Initialization
@@ -117,6 +128,7 @@ py scripts\etl_to_dw.py
 
 
 ## Table Previews
+- These screenshots provide a glimpse of the data tables before analysis
 
 ### Customer Table
 ![Customer Table](customer_table_screenshot.png)
@@ -133,6 +145,7 @@ py scripts\etl_to_dw.py
 - The ETL process is repeatable and can be run multiple times without manual cleanup.
 - The resulting SQLite database can be queried directly or connected to BI tools for further analysis.
 
+---
 
 ## Reporting and Analysis (Power BI)
 
@@ -162,3 +175,92 @@ py scripts\etl_to_dw.py
 
 ### Final Dashboard
 ![Final Dashboard](final_dashboard_screenshot.png)
+
+---
+
+# OLAP Project: Smart Sales Analysis
+
+## Section 1. The Business Goal
+
+The goal of this analysis is to identify the top-selling products and trends in sales across different product categories and time periods. This insight can help guide decisions related to inventory planning, marketing focus, and production prioritization.
+
+---
+
+## Section 2. Data Source
+
+The data was accessed through a prepared data warehouse using an ODBC connection. Three main tables were used:
+
+- **sale**: `sale_id`, `customer_id`, `product_id`, `sale_date`, `sale_amount`
+- **product**: `product_id`, `product_name`, `category`
+- **customer**: `customer_id`, `region`
+
+From these tables, measures such as total sales amount and total units sold were calculated and joined based on matching keys.
+
+---
+
+## Section 3. Tools
+
+Power BI was used to connect to the data warehouse, create data queries, and perform the OLAP-style analysis. Power BI was selected for its ability to provide visual slicing, dicing, and drilldown functionality without requiring code, while also producing interactive dashboards.
+
+---
+
+## Section 4. Workflow & Logic
+
+**Dimensions used:**
+- **Product category** (from the product table)
+- **Region** (from the customer table)
+- **Time** (extracted from `sale_date` as year, quarter, and month)
+
+**Metrics:**
+- **Total Sales Amount**: Sum of `sale_amount`
+- **Units Sold**: Count of `sale_id`
+
+**OLAP techniques:**
+- **Slicing** by year, quarter, and month using slicers
+- **Dicing** by category and region within visualizations and matrix tables
+- **Drilldown** enabled from year to quarter and month where applicable
+
+**Visuals include:**
+- Bar chart for total sales by product
+- Line chart for monthly sales trends by category
+- Matrix table to compare product and category-level totals
+
+---
+
+### Dashboard: Top Products by Units Sold
+
+
+![Top Products by Units Sold](scripts/olap/top_products_by_units_sold.png)
+
+This dashboard highlights the top 5 products based on units sold and compares product-category combinations in a matrix table.
+
+---
+
+### Dashboard: Total Sales by Product, Category, and Time
+
+![Total Sales by Product, Category, and Time](scripts/olap/top_sales_by_product.png)
+
+This page displays sales totals by product and category, along with monthly sales trends using a line chart and a matrix breakdown by product.
+
+---
+
+## Section 5. Results
+
+- Electronics category generated the highest total revenue, primarily driven by laptop sales.
+- Clothing had a higher number of units sold overall, though with lower average sale amounts.
+- Sales were highest in July and April, with noticeable declines in August and October.
+- Most of the top five products by units sold came from two categories: Clothing and Electronics.
+
+---
+
+## Section 6. Suggested Business Action
+
+- Maintain high inventory levels for top-performing products, especially laptops and jackets.
+- Re-evaluate marketing or pricing strategies for lower-performing products.
+- Use seasonality trends to plan future promotions and stock levels.
+
+---
+
+## Section 7. Challenges
+
+Initial difficulty occurred when creating a new aggregated table in Power BI using SQL. After reviewing the data source setup, a corrected ODBC configuration was used to successfully query and build separate tables for top products and top customers. Additionally, slicer formatting and visual layout adjustments were made to create a clean and consistent dashboard experience.
