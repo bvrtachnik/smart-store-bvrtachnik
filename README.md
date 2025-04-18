@@ -188,11 +188,10 @@ The goal of this analysis is to identify the top-selling products and trends in 
 
 ## Section 2. Data Source
 
-The data was accessed through a prepared data warehouse using an ODBC connection. Three main tables were used:
+The data was accessed through a prepared data warehouse using an ODBC connection. Two main tables were used:
 
-- **sale**: `sale_id`, `customer_id`, `product_id`, `sale_date`, `sale_amount`
+- **sale**: `sale_id`, `sale_date`, `sale_amount`
 - **product**: `product_id`, `product_name`, `category`
-- **customer**: `customer_id`, `region`
 
 From these tables, measures such as total sales amount and total units sold were calculated and joined based on matching keys.
 
